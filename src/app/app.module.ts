@@ -8,6 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
 
 var firebaseConfig = {
     apiKey: "AIzaSyDXTMCESK3aeuMubO6zVTNYSh_Lwu4nYWA",
@@ -20,6 +21,7 @@ var firebaseConfig = {
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'menu', component: MenuComponent },
   { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent}
 ];
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

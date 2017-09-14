@@ -4,7 +4,7 @@
 /* Fonts  */
 
 @font-face {
-  font-family: naga;
+  font-family: SOV_naga;
   src: url("/assets/fonts/SOV_naga.ttf");
 }
 
@@ -32,7 +32,7 @@ nav {
   font-size: 230%;
   line-height: 0.9;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
-  font-family: 'naga';
+  font-family: SOV_naga;
   background-color: rgba(255, 255, 255, 0.8)
 }
 

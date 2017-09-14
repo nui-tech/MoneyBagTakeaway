@@ -1,4 +1,10 @@
-.error404{
-    text-align: center;
-    margin-top: 40vh;
+.pagenotfound {
+  height: 40vh;
+  display: table;
+  text-align: center;
+}
+
+.error404 {
+  display: table-cell;
+  vertical-align: middle;
 }

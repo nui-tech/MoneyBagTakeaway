@@ -3,17 +3,24 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AngularFireModule } from 'angularfire2';
+
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 
-
+var firebaseConfig = {
+    apiKey: "AIzaSyDXTMCESK3aeuMubO6zVTNYSh_Lwu4nYWA",
+    authDomain: "moneybagthaichch.firebaseapp.com",
+    databaseURL: "https://moneybagthaichch.firebaseio.com",
+    projectId: "moneybagthaichch",
+    storageBucket: "",
+    messagingSenderId: "1041921628886"
+  };
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  // { path: 'economicnews', component: NewsComponent },
-  // { path: 'dashboard', component: DashboardComponent },
-  // { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent}
 ];
 
@@ -26,7 +33,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

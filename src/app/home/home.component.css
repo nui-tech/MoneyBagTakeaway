@@ -1,0 +1,95 @@
+section {
+  text-align: center;
+}
+
+.section1 {
+  background-image: url("https://i.guim.co.uk/img/media/77fe460ac2d4966f5169ff730d5b599a8e9895be/0_470_7216_4330/master/7216.jpg?w=1920&q=55&auto=format&usm=12&fit=max&s=5344c4bd09439611d92519233f4d6ef5");
+  height: 500px;
+  background-position: center top;
+  color: white;
+  font-size: 400%;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.section1>div {
+  width: 45vw;
+  background: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  padding: 10px;
+}
+
+
+
+/****************************** 
+    Section 2
+******************************/
+
+.section2 {
+  padding: 80px 0;
+  /* background-image: url("/assets/bg/thai-bg.jpg"); */
+}
+
+.section2 main {
+  text-align: left;
+}
+.section2 header>h1 {
+  font-family: 'naga';
+  font-size: 500%;
+  font-weight: bolder;
+  color: gold;
+}
+
+.section2 header>i {
+  font-size: 300%;
+  color: gold;
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .section1>div {
+    width: 60vw;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section1>div {
+    width: 70vw;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section1>div {
+    width: 80vw;
+    font-size: 90%;
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .section1>div {
+    width: 90vw;
+    font-size: 80%;
+  }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+  .section1>div {
+    width: 95vw;
+    font-size: 60%;
+  }
+}

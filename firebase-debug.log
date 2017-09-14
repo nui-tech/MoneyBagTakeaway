@@ -1,0 +1,33 @@
+[debug] [2017-09-14T18:07:39.479Z] ----------------------------------------------------------------------
+[debug] [2017-09-14T18:07:39.482Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-09-14T18:07:39.482Z] CLI Version:   3.10.1
+[debug] [2017-09-14T18:07:39.482Z] Platform:      darwin
+[debug] [2017-09-14T18:07:39.483Z] Node Version:  v6.10.3
+[debug] [2017-09-14T18:07:39.483Z] Time:          Fri Sep 15 2017 06:07:39 GMT+1200 (NZST)
+[debug] [2017-09-14T18:07:39.483Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-14T18:07:39.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-14T18:07:39.495Z] > authorizing via signed-in user
+[debug] [2017-09-14T18:07:39.497Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-09-14T18:07:39.498Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/vvVTcAXXqE8eMuPmCjJeflTH8MyQ7YNc9ITWQC1wXuE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Sep 15 2017 06:07:39 GMT+1200 (NZST)
+[debug] [2017-09-14T18:07:40.010Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-14T18:07:40.014Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/moneybagthaichch  
+ Fri Sep 15 2017 06:07:40 GMT+1200 (NZST)
+[debug] [2017-09-14T18:07:41.715Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-14T18:07:41.717Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/moneybagthaichch/tokens  
+ Fri Sep 15 2017 06:07:41 GMT+1200 (NZST)
+[debug] [2017-09-14T18:07:42.850Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'moneybagthaichch'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2017-09-14T18:07:45.341Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/moneybagthaichch/uploads/-Ku0Zo8AUNzO3YhowfyV?fileCount=18&message=  
+ Fri Sep 15 2017 06:07:45 GMT+1200 (NZST)
+[debug] [2017-09-14T18:07:55.873Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-14T18:07:55.873Z] [hosting] .tgz uploaded successfully, waiting for extraction

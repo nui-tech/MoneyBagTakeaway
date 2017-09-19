@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
+import { MdTabsModule} from '@angular/material';
+
 import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { AppNavComponent } from './core/components/app-nav/app-nav.component';
+import { AppFooterComponent } from './core/components/app-footer/app-footer.component';
 
 var firebaseConfig = {
     apiKey: "AIzaSyDXTMCESK3aeuMubO6zVTNYSh_Lwu4nYWA",
@@ -31,13 +35,16 @@ const appRoutes: Routes = [
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    AppNavComponent,
+    AppFooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    MdTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

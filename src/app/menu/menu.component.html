@@ -1,3 +1,101 @@
-<div class="container">
-  <h1>Menu is under working</h1>
+<div class="container menu">
+  <header>
+    <h2>Menu</h2>
+    <md-tab-group>
+
+
+      <md-tab label="All">
+        <section class="menu-items">
+          <div class="card" *ngFor="let menu of menus">
+            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+            <div class="card-body">
+              <span class="pull-right">
+                            <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                        </span>
+              <h4 class="card-title">{{menu.name}} </h4>
+              <p class="card-text">{{menu.description}}</p>
+
+            </div>
+          </div>
+        </section>
+        <section class="menu-items">
+          <div class="card" *ngFor="let menu of menus">
+            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+            <div class="card-body">
+              <span class="pull-right">
+                          <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                      </span>
+              <h4 class="card-title">{{menu.name}} </h4>
+              <p class="card-text">{{menu.description}}</p>
+
+            </div>
+          </div>
+        </section>
+        <section class="menu-items">
+          <div class="card" *ngFor="let menu of menus">
+            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+            <div class="card-body">
+              <span class="pull-right">
+                            <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                        </span>
+              <h4 class="card-title">{{menu.name}} </h4>
+              <p class="card-text">{{menu.description}}</p>
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+     
+      
+      <md-tab label="Entrée">
+        <section class="menu-items">
+          <div class="card" *ngFor="let menu of menus">
+            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+            <div class="card-body">
+              <span class="pull-right">
+                        <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                    </span>
+              <h4 class="card-title">{{menu.name}} </h4>
+              <p class="card-text">{{menu.description}}</p>
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+
+
+      <md-tab label="Main">
+        <section class="menu-items">
+          <div class="card" *ngFor="let menu of menus">
+            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+            <div class="card-body">
+              <span class="pull-right">
+                            <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                        </span>
+              <h4 class="card-title">{{menu.name}} </h4>
+              <p class="card-text">{{menu.description}}</p>
+
+            </div>
+          </div>
+        </section>
+        <section class="menu-items">
+          <div class="card" *ngFor="let menu of menus">
+            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+            <div class="card-body">
+              <span class="pull-right">
+                          <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                      </span>
+              <h4 class="card-title">{{menu.name}} </h4>
+              <p class="card-text">{{menu.description}}</p>
+
+            </div>
+          </div>
+        </section>
+      </md-tab>
+
+
+    </md-tab-group>
+  </header>
+
+
 </div>

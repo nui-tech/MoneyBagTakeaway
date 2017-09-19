@@ -9,11 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   menus = exEntree;
+ 
 
   constructor() { }
 
   ngOnInit() {
+    window.addEventListener('scroll', this.scroll, true);
   }
+
+  scroll = (): void => {
+    //handle your scroll here
+    //notice the 'odd' function assignment to a class field
+    window.scrollbars;
+    console.log('scrolling');
+  };
+
+
 
 }
 

@@ -36,6 +36,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
         else if(menuType == 'soup')this.tabIndex = 4;
         else if(menuType == 'curry')this.tabIndex = 5;
         else if(menuType == 'seafood')this.tabIndex = 6;
+        else this.tabIndex = 0;
     }
 
     scroll = (): void => {

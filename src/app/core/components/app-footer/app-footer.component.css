@@ -1,0 +1,31 @@
+.socialmedia {
+  text-align: center;
+  font-size: 300%;
+  padding-top: 60px;
+}
+address{
+    font-size: 160%;
+    margin-top: 0px;
+    text-align: center;
+}
+.copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.fa-twitter-square:hover {
+  color: #4099ff;
+}
+
+.fa-instagram:hover {
+  color: #d047d1;
+  background: -webkit-linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

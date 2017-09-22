@@ -1,101 +1,294 @@
 <div class="container menu">
   <header>
     <h2>Menu</h2>
-    <md-tab-group>
+  </header>
 
-
+  <section class="menu-container">
+    <md-tab-group #tabGroup (selectChange)="onSelectChange($event)" 
+    [selectedIndex]="tabIndex" >
       <md-tab label="All">
-        <section class="menu-items">
-          <div class="card" *ngFor="let menu of menus">
-            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
-            <div class="card-body">
-              <span class="pull-right">
-                            <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
-                        </span>
-              <h4 class="card-title">{{menu.name}} </h4>
-              <p class="card-text">{{menu.description}}</p>
 
-            </div>
-          </div>
-        </section>
-        <section class="menu-items">
-          <div class="card" *ngFor="let menu of menus">
-            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
-            <div class="card-body">
-              <span class="pull-right">
-                          <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
-                      </span>
-              <h4 class="card-title">{{menu.name}} </h4>
-              <p class="card-text">{{menu.description}}</p>
+        <ul class="menu-list">
+          <h4>Entrées</h4>
+          <li *ngFor="let menu of entrees">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}</p>
+          </li>
+        </ul>
 
-            </div>
-          </div>
-        </section>
-        <section class="menu-items">
-          <div class="card" *ngFor="let menu of menus">
-            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
-            <div class="card-body">
-              <span class="pull-right">
-                            <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
-                        </span>
-              <h4 class="card-title">{{menu.name}} </h4>
-              <p class="card-text">{{menu.description}}</p>
+        <ul class="menu-list">
+          <h4>Rice & Noodles</h4>
+          <li *ngFor="let menu of riceNoodles">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                        <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
 
-            </div>
-          </div>
-        </section>
+        <ul class="menu-list">
+          <h4>Stir Fried</h4>
+          <li *ngFor="let menu of stirFrieds">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                      <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+
+        <ul class="menu-list">
+          <h4>Soup</h4>
+          <li *ngFor="let menu of soups">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                        <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+
+        <ul class="menu-list">
+          <h4>Curry</h4>
+          <li *ngFor="let menu of curries">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                        <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+
+        <ul class="menu-list">
+          <h4>Seafood</h4>
+          <li *ngFor="let menu of seafoods">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                        <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+
+
       </md-tab>
-     
-      
-      <md-tab label="Entrée">
-        <section class="menu-items">
-          <div class="card" *ngFor="let menu of menus.reverse()">
-            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
-            <div class="card-body">
-              <span class="pull-right">
-                        <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
-                    </span>
-              <h4 class="card-title">{{menu.name}} </h4>
-              <p class="card-text">{{menu.description}}</p>
 
-            </div>
-          </div>
-        </section>
+      <md-tab label="Entrèe">
+        <ul class="menu-list">
+          <li *ngFor="let menu of entrees">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}</p>
+          </li>
+        </ul>
       </md-tab>
 
-
-      <md-tab label="Main">
-        <section class="menu-items">
-          <div class="card" *ngFor="let menu of menus.reverse()">
-            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
-            <div class="card-body">
-              <span class="pull-right">
-                            <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
-                        </span>
-              <h4 class="card-title">{{menu.name}} </h4>
-              <p class="card-text">{{menu.description}}</p>
-
-            </div>
-          </div>
-        </section>
-        <section class="menu-items">
-          <div class="card" *ngFor="let menu of menus">
-            <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
-            <div class="card-body">
-              <span class="pull-right">
-                          <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
-                      </span>
-              <h4 class="card-title">{{menu.name}} </h4>
-              <p class="card-text">{{menu.description}}</p>
-
-            </div>
-          </div>
-        </section>
+      <md-tab label="Rice & Noodle">
+        <ul class="menu-list">
+          <li *ngFor="let menu of riceNoodles">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                  <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
       </md-tab>
 
+      <md-tab label="Stir Fried">
+        <ul class="menu-list">
+          <li *ngFor="let menu of stirFrieds">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                    <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+      </md-tab>
+
+      <md-tab label="Soup">
+        <ul class="menu-list">
+          <li *ngFor="let menu of soups">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                      <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+      </md-tab>
+
+      <md-tab label="Curry">
+        <ul class="menu-list">
+          <li *ngFor="let menu of curries">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                        <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+      </md-tab>
+
+      <md-tab label="Seafood">
+        <ul class="menu-list">
+          <li *ngFor="let menu of seafoods">
+            <header>
+              <span class="pull-right">${{menu.price}}</span>
+              <h5>{{menu.name}}</h5>
+            </header>
+            <p>{{menu.description}}. Meat options:
+              <span *ngFor="let options of menu.option">
+                          <span class="badge badge-pill badge-light">{{options}}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+      </md-tab>
 
     </md-tab-group>
-  </header>
+  </section>
+
+
 
 
 </div>
+
+
+<!-- <md-tab-group>
+
+
+  <md-tab label="All">
+    <section class="menu-items">
+      <div class="card" *ngFor="let menu of menus">
+        <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+        <div class="card-body">
+          <span class="pull-right">
+                                <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                            </span>
+          <h4 class="card-title">{{menu.name}} </h4>
+          <p class="card-text">{{menu.description}}</p>
+
+        </div>
+      </div>
+    </section>
+    <section class="menu-items">
+      <div class="card" *ngFor="let menu of menus">
+        <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+        <div class="card-body">
+          <span class="pull-right">
+                              <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                          </span>
+          <h4 class="card-title">{{menu.name}} </h4>
+          <p class="card-text">{{menu.description}}</p>
+
+        </div>
+      </div>
+    </section>
+    <section class="menu-items">
+      <div class="card" *ngFor="let menu of menus">
+        <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+        <div class="card-body">
+          <span class="pull-right">
+                                <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                            </span>
+          <h4 class="card-title">{{menu.name}} </h4>
+          <p class="card-text">{{menu.description}}</p>
+
+        </div>
+      </div>
+    </section>
+  </md-tab>
+
+
+  <md-tab label="Entrée">
+    <section class="menu-items">
+      <div class="card" *ngFor="let menu of menus.reverse()">
+        <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+        <div class="card-body">
+          <span class="pull-right">
+                            <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                        </span>
+          <h4 class="card-title">{{menu.name}} </h4>
+          <p class="card-text">{{menu.description}}</p>
+
+        </div>
+      </div>
+    </section>
+  </md-tab>
+
+
+  <md-tab label="Main">
+    <section class="menu-items">
+      <div class="card" *ngFor="let menu of menus.reverse()">
+        <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+        <div class="card-body">
+          <span class="pull-right">
+                                <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                            </span>
+          <h4 class="card-title">{{menu.name}} </h4>
+          <p class="card-text">{{menu.description}}</p>
+
+        </div>
+      </div>
+    </section>
+    <section class="menu-items">
+      <div class="card" *ngFor="let menu of menus">
+        <img class="card-img-top" src="{{menu.picturePath}}" alt="Card image cap">
+        <div class="card-body">
+          <span class="pull-right">
+                              <a href="#" class="btn btn-outline-success">${{menu.price}}</a>
+                          </span>
+          <h4 class="card-title">{{menu.name}} </h4>
+          <p class="card-text">{{menu.description}}</p>
+
+        </div>
+      </div>
+    </section>
+  </md-tab>
+
+
+</md-tab-group> -->

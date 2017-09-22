@@ -5,15 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app-nav.component.html'
 })
 export class AppNavComponent implements OnInit {
-  logoPath = "/assets/logo/logo-text-ex.svg";
+  logoPath = "/assets/logo/logo-text-ex.png";
   constructor() { }
 
   ngOnInit() {
-    if (window.innerWidth < 414) {
-      this.logoPath = "/assets/logo/logo-text-ex.png";
-    } else {
-      this.logoPath = "/assets/logo/logo-text-ex.svg";
-    }
+    // if (window.innerWidth < 414) {
+    //   this.logoPath = "/assets/logo/logo-text-ex.png";
+    // } else {
+    //   this.logoPath = "/assets/logo/logo-text-ex.svg";
+    // }
   }
 
 }

@@ -4,6 +4,7 @@
   
 }
 
+
 .menu-items .card {
   width: 20rem;
   margin: 15px 0;
@@ -23,6 +24,33 @@ section.menu-items {
   justify-content: space-around;
   align-content: flex-start;
 }
+
+.dot{
+  border-top: 2px dotted #5F7F98;
+  height: 2px;
+  margin: 3.125rem 0;
+}
+
+.menu-list{
+  list-style: none;
+  max-width: 850px;
+  margin: 50px auto;
+}
+
+.menu-list header{
+ border-bottom: 1px dotted #c90;
+ color: #c90;
+ margin-bottom: 7px;
+}
+.menu-list h4{
+  margin-bottom: 20px;
+  margin-left: -30px;
+}
+
+.menu-list h5{
+  margin-bottom: 0;
+}
+
 
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -51,5 +79,13 @@ section.menu-items {
   .menu-items .card {
     width: 100%;
     margin: 15px 0;
+  }
+
+  .menu-list{
+    padding: 0;
+    margin: 40px auto;
+  }
+  .menu-list h4{
+    margin-left: 0px;
   }
 }

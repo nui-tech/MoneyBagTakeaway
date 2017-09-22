@@ -26,6 +26,7 @@ var firebaseConfig = {
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'menu/:param', component: MenuComponent },
   { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent}
 ];

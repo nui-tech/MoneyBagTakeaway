@@ -40,12 +40,15 @@ section {
   font-family: SOV_naga;
   font-size: 500%;
   font-weight: bolder;
-  color: gold;
+  color: #c90;
 }
 
 .section2 header>i {
   font-size: 300%;
-  color: gold;
+  color: #c90;
+}
+.section2 header>img{
+  margin: -15px 0 15px 0;
 }
 
 

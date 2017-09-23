@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app-nav.component.html'
 })
 export class AppNavComponent implements OnInit {
-  logoPath = "/assets/logo/logo-text-ex.png";
+  logoPath = "/assets/logo/logo-text-ex-gold.png";
   constructor() { }
 
   ngOnInit() {

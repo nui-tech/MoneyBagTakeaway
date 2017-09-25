@@ -1,0 +1,122 @@
+section {
+  text-align: center;
+}
+
+.section1 {
+    padding-bottom: 30px;
+}
+
+
+
+/****************************** 
+    Section 2
+******************************/
+
+.section2 {
+  padding: 30px 0;
+  /* background-image: url("/assets/bg/thai-bg.jpg"); */
+}
+
+.section2 main {
+  text-align: left;
+}
+
+.section2 header>h1 {
+  font-family: SOV_naga;
+  font-size: 500%;
+  font-weight: bolder;
+  color: #c90;
+}
+
+.section2 header>i {
+  font-size: 300%;
+  color: #c90;
+}
+
+.section2 header>img {
+  margin: -15px 0 15px 0;
+}
+
+
+.section3  div{
+    padding: 0;
+    min-height: 300px;
+}
+
+.section3 img{
+    width: 100%;
+    overflow-y: hidden;
+}
+.img1{
+
+    background-image: url('/assets/img/interior.jpg');
+    
+}
+.img2{
+
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ93Ke2lkhKQAPVRZRDqg9t4gXIXrKfU5lWiqgKrm1cKx6WOvJ');
+}
+.img3{
+
+    background: url('http://www.edwardshaw.co.uk/wp-content/uploads/2012/04/restaurant-photographers-birmingham-moody-interior-1888.jpg');
+}
+.section3 .row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .section1>div {
+    width: 60vw;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section1>div {
+    width: 70vw;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section1>div {
+    width: 80vw;
+    font-size: 90%;
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .section1>div {
+    width: 90vw;
+    font-size: 80%;
+  }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+  .section1>div {
+    width: 95vw;
+    font-size: 60%;
+  }
+  p{
+      font-size: 90%;
+  }
+  .section2 header>h1 {
+    font-size: 300%;  
+  }
+}

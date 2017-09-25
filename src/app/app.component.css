@@ -1,0 +1,56 @@
+.callnow{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    width: 80px;
+    height: 80px;
+    background-color: #c90;
+    color: white;
+    padding: 12px 0;
+    display: none;
+}
+.menu{
+    position: fixed;
+    bottom: 140px;
+    right: 62.5px;
+    z-index: 100;
+    display: none; 
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .callnow{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+    .callnow{
+        display: block;
+        bottom: 10px;
+        right: 10px;
+    }
+    .menu{
+        display: block;
+        bottom: 100px;
+        right: 22.5px;
+    }
+}

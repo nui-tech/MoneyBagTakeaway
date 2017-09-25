@@ -92,6 +92,10 @@ footer.footer {
 
 
 /* Not required for template or sticky footer method. */
+p{
+  font-size: 110%;
+}
+
 
 .container-fluid {
   padding: 0;

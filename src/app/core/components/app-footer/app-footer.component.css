@@ -1,7 +1,7 @@
 .socialmedia {
   text-align: center;
   font-size: 300%;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 address{
     font-size: 160%;
@@ -9,9 +9,9 @@ address{
     text-align: center;
 }
 .copyright{
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
-    font-size: 120%;
+    font-size: 90%;
 }
 
 .fa-facebook-square:hover {
@@ -29,3 +29,12 @@ address{
   -webkit-text-fill-color: transparent;
 }
 
+.openinghr{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  width: 270px;
+  margin: 0 auto;
+  padding: 15px 5px 5px;
+  border-radius: 4px;
+}

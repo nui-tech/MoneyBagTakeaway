@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
-import { MdTabsModule} from '@angular/material';
+import { MdTabsModule, MdButtonModule } from '@angular/material';
 
 import { AngularFireModule } from 'angularfire2';
 
@@ -13,22 +13,24 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { AppNavComponent } from './core/components/app-nav/app-nav.component';
 import { AppFooterComponent } from './core/components/app-footer/app-footer.component';
+import { AboutComponent } from './about/about.component';
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDXTMCESK3aeuMubO6zVTNYSh_Lwu4nYWA",
-    authDomain: "moneybagthaichch.firebaseapp.com",
-    databaseURL: "https://moneybagthaichch.firebaseio.com",
-    projectId: "moneybagthaichch",
-    storageBucket: "",
-    messagingSenderId: "1041921628886"
-  };
+  apiKey: "AIzaSyDXTMCESK3aeuMubO6zVTNYSh_Lwu4nYWA",
+  authDomain: "moneybagthaichch.firebaseapp.com",
+  databaseURL: "https://moneybagthaichch.firebaseio.com",
+  projectId: "moneybagthaichch",
+  storageBucket: "",
+  messagingSenderId: "1041921628886"
+};
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'menu/:param', component: MenuComponent },
+  { path: 'about', component: AboutComponent },
   { path: '', component: HomeComponent },
-  { path: '**', component: PageNotFoundComponent}
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -38,14 +40,16 @@ const appRoutes: Routes = [
     HomeComponent,
     MenuComponent,
     AppNavComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(firebaseConfig),
-    MdTabsModule
+    MdTabsModule,
+    MdButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

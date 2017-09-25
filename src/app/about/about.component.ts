@@ -32,15 +32,4 @@ export class AboutComponent implements OnInit {
     
   }
   
-
- 
-  
-  toggleBounce(){
-    var marker = this.marker;
-    if (marker.getAnimation() !== null) {
-      marker.setAnimation(null);
-    } else {
-      marker.setAnimation(google.maps.Animation.BOUNCE);
-    }
-  }
 }

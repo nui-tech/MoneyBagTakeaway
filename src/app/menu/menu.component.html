@@ -5,12 +5,14 @@
   </header>
 
   <section class="menu-container">
-    <md-tab-group #tabGroup (selectChange)="onSelectChange($event)" 
-    [selectedIndex]="tabIndex" >
+    <md-tab-group #tabGroup (selectChange)="onSelectChange($event)" [selectedIndex]="tabIndex">
       <md-tab label="All">
 
         <ul class="menu-list">
           <h4>Entrées</h4>
+          <div style="text-align:center;">
+            <img src="/assets/img/decor-gold.png" alt="">
+          </div>
           <li *ngFor="let menu of entrees">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -22,6 +24,9 @@
 
         <ul class="menu-list">
           <h4>Rice & Noodles</h4>
+          <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of riceNoodles">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -37,6 +42,9 @@
 
         <ul class="menu-list">
           <h4>Stir Fried</h4>
+          <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of stirFrieds">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -51,7 +59,10 @@
         </ul>
 
         <ul class="menu-list">
-          <h4>Soup</h4>
+          <h4>Soups</h4>
+          <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of soups">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -66,7 +77,10 @@
         </ul>
 
         <ul class="menu-list">
-          <h4>Curry</h4>
+          <h4>Curries</h4>
+          <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of curries">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -82,6 +96,9 @@
 
         <ul class="menu-list">
           <h4>Seafood</h4>
+          <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of seafoods">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -99,7 +116,12 @@
       </md-tab>
 
       <md-tab label="Entrèe">
+         
         <ul class="menu-list">
+            <h4>Entrées</h4>
+            <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of entrees">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -112,6 +134,10 @@
 
       <md-tab label="Rice & Noodle">
         <ul class="menu-list">
+            <h4>Rice & Noodles</h4>
+            <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of riceNoodles">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -128,6 +154,10 @@
 
       <md-tab label="Stir Fried">
         <ul class="menu-list">
+            <h4>Stir Fried</h4>
+            <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of stirFrieds">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -144,6 +174,10 @@
 
       <md-tab label="Soup">
         <ul class="menu-list">
+            <h4>Soups</h4>
+            <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of soups">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -160,6 +194,10 @@
 
       <md-tab label="Curry">
         <ul class="menu-list">
+            <h4>Curries</h4>
+            <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of curries">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -176,6 +214,10 @@
 
       <md-tab label="Seafood">
         <ul class="menu-list">
+            <h4>Seafood</h4>
+            <div style="text-align:center;">
+              <img src="/assets/img/decor-gold.png" alt="">
+            </div>
           <li *ngFor="let menu of seafoods">
             <header>
               <span class="pull-right">${{menu.price}}</span>
@@ -193,9 +235,6 @@
     </md-tab-group>
   </section>
 
-<div style="text-align:center;">
-  <img  src="/assets/img/decor-gold.png" alt="">
-</div>
 
 </div>
 

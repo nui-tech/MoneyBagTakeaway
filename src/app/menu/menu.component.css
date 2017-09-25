@@ -1,42 +1,49 @@
 .container.menu {
   margin-top: 30px;
   padding-bottom: 30px;
-  
 }
 
-.menu header h2{
-  font-family:SOV_naga;font-size:400%;color:#c90
+.menu header h2 {
+  font-family: SOV_naga;
+  font-size: 400%;
+  color: #c90;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-.menu header small{
+
+.menu header small {
   position: relative;
-  top: -25px;
+  top: -20px;
   color: gray;
 }
 
-
-.menu-list{
+.menu-list {
   list-style: none;
   max-width: 850px;
   margin: 50px auto;
 }
 
-.menu-list header{
- border-bottom: 1px dotted #c90;
- color: #c90;
- margin-bottom: 7px;
-}
-.menu-list h4{
-  margin-bottom: 20px;
-  margin-left: -30px;
+.menu-list header {
+  border-bottom: 1px dotted #c90;
+  color: #c90;
+  margin-bottom: 7px;
 }
 
-.menu-list h5{
+.menu-list h4 {
+  font-family: SOV_naga;
+  font-size: 300%;
+  margin-bottom: -5px;
+  /* margin-left: -30px; */
+  text-align: center;
+}
+
+.menu-list h5 {
   margin-bottom: 0;
 }
-.menu-list p{
+
+.menu-list p {
   font-size: 90%;
 }
-
 
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -66,12 +73,11 @@
     width: 100%;
     margin: 15px 0;
   }
-
-  .menu-list{
+  .menu-list {
     padding: 0;
     margin: 40px auto;
   }
-  .menu-list h4{
+  .menu-list h4 {
     margin-left: 0px;
   }
 }

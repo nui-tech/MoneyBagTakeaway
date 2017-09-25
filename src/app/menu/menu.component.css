@@ -4,32 +4,10 @@
   
 }
 
-
-.menu-items .card {
-  width: 20rem;
-  margin: 15px 0;
+.menu header h2{
+  font-family:SOV_naga;font-size:400%;color:#c90
 }
 
-.menu-items img {
-    width: auto;
-  min-height: 150px;
-  max-height: 150px;
-  
-}
-
-section.menu-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-}
-
-.dot{
-  border-top: 2px dotted #5F7F98;
-  height: 2px;
-  margin: 3.125rem 0;
-}
 
 .menu-list{
   list-style: none;

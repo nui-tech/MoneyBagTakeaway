@@ -3,9 +3,8 @@ section {
 }
 
 .section1 {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
-
 
 
 /****************************** 
@@ -37,35 +36,40 @@ section {
   margin: -15px 0 15px 0;
 }
 
-
-.section3  div{
-    padding: 0;
-    min-height: 300px;
+.section3 div {
+  padding: 0;
+  min-height: 350px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
-.section3 img{
-    width: 100%;
-    overflow-y: hidden;
-}
-.img1{
-
-    background-image: url('/assets/img/interior.jpg');
-    
-}
-.img2{
-
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ93Ke2lkhKQAPVRZRDqg9t4gXIXrKfU5lWiqgKrm1cKx6WOvJ');
-}
-.img3{
-
-    background: url('http://www.edwardshaw.co.uk/wp-content/uploads/2012/04/restaurant-photographers-birmingham-moody-interior-1888.jpg');
-}
-.section3 .row{
-    margin-right: 0;
-    margin-left: 0;
+.section3 img {
+  width: 100%;
+  overflow-y: hidden;
 }
 
+.img1 {
+  background-image: url('/assets/img/interior.jpg');
+}
 
+.img2 {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ93Ke2lkhKQAPVRZRDqg9t4gXIXrKfU5lWiqgKrm1cKx6WOvJ');
+}
+
+.img3 {
+  background: url('http://www.edwardshaw.co.uk/wp-content/uploads/2012/04/restaurant-photographers-birmingham-moody-interior-1888.jpg');
+}
+
+.section3 .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#googleMap {
+  height: 400px;
+  width: 100%;
+}
 
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -113,10 +117,13 @@ section {
     width: 95vw;
     font-size: 60%;
   }
-  p{
-      font-size: 90%;
+  p {
+    font-size: 90%;
   }
   .section2 header>h1 {
-    font-size: 300%;  
+    font-size: 300%;
+  }
+  #googleMap{
+      display: none;
   }
 }

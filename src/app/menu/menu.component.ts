@@ -1,5 +1,6 @@
 import { element } from 'protractor';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 
 
@@ -20,9 +21,13 @@ export class MenuComponent implements OnInit, AfterViewInit {
     tabIndex = 0;
     fixTop: string;
 
-    constructor(private _avRoute: ActivatedRoute,private _router: Router) { }
+    constructor(private _avRoute: ActivatedRoute,
+        private _router: Router,
+        private _title: Title
+    ) { }
 
-    ngOnInit() {      
+    ngOnInit() {     
+        this._title.setTitle('Menu - Money Bag Thai Takeaway'); 
         window.addEventListener('scroll', this.scroll, true);
     }
 

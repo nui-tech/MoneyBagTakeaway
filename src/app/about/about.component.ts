@@ -13,22 +13,22 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.title.setTitle('About - Money Bag Thai Takeaway');
-    var myLatlng = new google.maps.LatLng(-43.561521, 172.738544);
-    var mapOptions = {
-      zoom: 15,
-      center: myLatlng
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+    // var myLatlng = new google.maps.LatLng(-43.561521, 172.738544);
+    // var mapOptions = {
+    //   zoom: 15,
+    //   center: myLatlng
+    // };
+    // var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
     
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      label: 'Money Bag - Thai Takeaway',
+    // var marker = new google.maps.Marker({
+    //   position: myLatlng,
+    //   map: map,
+    //   label: 'Money Bag - Thai Takeaway',
     
-    });
+    // });
     
-    // To add the marker to the map, call setMap();
-    marker.setMap(map);
+    // // To add the marker to the map, call setMap();
+    // marker.setMap(map);
     
   }
   

@@ -18,6 +18,10 @@ section {
   background: rgba(0, 0, 0, 0.4);
   margin: auto;
   padding: 10px;
+  transition: background 200ms ease-in-out 0.1s;
+}
+.section1>div:hover{
+  background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -53,10 +57,10 @@ section {
   bottom: 12px;
   padding: 5px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.7);
   width: 98%;
   text-align: left;
 }
+
 .col-md-6{
   padding:0 0.5%;
 }
@@ -71,6 +75,10 @@ section {
   max-width: 700px;
   border: 2px solid #c90;
   padding: 30px 15px 15px;
+  transition: transform 200ms ease-in-out 0.1s;
+}
+.section3>.container:hover{
+  transform:scale(1.1,1.1);
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

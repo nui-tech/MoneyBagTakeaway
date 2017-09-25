@@ -19,16 +19,19 @@ section {
 .section2 main {
   text-align: left;
 }
-.section2 header{
-font-family: SOV_naga;
-font-weight: bolder;
-color: #c90;
+
+.section2 header {
+  font-family: SOV_naga;
+  font-weight: bolder;
+  color: #c90;
 }
+
 .section2 header>h1 {
   font-size: 500%;
 }
-.section2 header>h3{
-    font-size: 320%;
+
+.section2 header>h3 {
+  font-size: 320%;
 }
 
 .section2 header>i {
@@ -55,15 +58,26 @@ color: #c90;
 .img1 {
   background-image: url('/assets/img/interior.jpg');
 }
+
 .img2 {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ93Ke2lkhKQAPVRZRDqg9t4gXIXrKfU5lWiqgKrm1cKx6WOvJ');
 }
+
 .img3 {
   background: url('http://www.edwardshaw.co.uk/wp-content/uploads/2012/04/restaurant-photographers-birmingham-moody-interior-1888.jpg');
 }
-.img4{background-image: url('/assets/img/interior3.png');}
-.img5{background-image: url('/assets/img/interior2.jpg');}
-.img6{background-image: url('/assets/img/interior1.jpg');}
+
+.img4 {
+  background-image: url('/assets/img/interior3.png');
+}
+
+.img5 {
+  background-image: url('/assets/img/interior2.jpg');
+}
+
+.img6 {
+  background-image: url('/assets/img/interior1.jpg');
+}
 
 .section3 .row {
   margin-right: 0;
@@ -71,8 +85,24 @@ color: #c90;
 }
 
 #googleMap {
-  height: 400px;
+  min-height: 350px;
   width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=85+Main+Rd,+Redcliffs,+Christchurch+8081&scale=2&zoom=13&size=680x180&markers=color:red%7Clabel:M%7C85+Main+Rd,+Redcliffs,+Christchurch+8081&key=AIzaSyDXTMCESK3aeuMubO6zVTNYSh_Lwu4nYWA');
+  position: relative;
+}
+
+#googleMap>div {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+#googleMap a:hover{
+  text-decoration: none;
 }
 
 
@@ -127,7 +157,7 @@ color: #c90;
   .section2 header>h1 {
     font-size: 300%;
   }
-  #googleMap{
-      display: none;
+  #googleMap {
+    min-height: 300px;
   }
 }

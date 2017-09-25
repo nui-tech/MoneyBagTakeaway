@@ -3,21 +3,19 @@ section {
 }
 
 .section1 {
-  /* background-image: url("https://i.guim.co.uk/img/media/77fe460ac2d4966f5169ff730d5b599a8e9895be/0_470_7216_4330/master/7216.jpg?w=1920&q=55&auto=format&usm=12&fit=max&s=5344c4bd09439611d92519233f4d6ef5"); */
-  /* background-image: url("/assets/img/food-cover.jpg"); */
-    background-image: url("/assets/img/food-cover-2.jpg");
+  background-image: url("/assets/img/food-cover-2.jpg");
   height: 500px;
   background-position: center center;
   color: white;
   font-size: 400%;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
   padding-top: 150px;
 }
 
 .section1>div {
-  width: 45vw;
-  background: rgba(0, 0, 0, 0.3);
+  width: 50vw;
+  background: rgba(0, 0, 0, 0.4);
   margin: auto;
   padding: 10px;
 }
@@ -29,7 +27,7 @@ section {
 ******************************/
 
 .section2 {
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 .section2 header{
   text-align: center;
@@ -42,7 +40,7 @@ section {
   color: #c90;
 }
 .section2 header>img{
-  margin: -20px 0 20px 0;
+  margin: -20px 0 0 0;
 }
 
 .section2 main img{
@@ -64,6 +62,15 @@ section {
 }
 .space-15{
   padding: 6px 0;
+}
+
+.section3{
+  padding: 50px 0 0px;
+}
+.section3>.container{
+  max-width: 700px;
+  border: 2px solid #c90;
+  padding: 30px 15px 15px;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -101,6 +108,9 @@ section {
     width: 90vw;
     font-size: 80%;
   }
+  .section3{
+    margin: 0 10px;
+  }
 }
 
 
@@ -116,5 +126,8 @@ section {
   }
   .caption{
     width: 99%;
+  }
+  .section3{
+    margin: 0 10px;
   }
 }

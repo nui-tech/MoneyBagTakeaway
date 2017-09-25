@@ -7,6 +7,11 @@
 .menu header h2{
   font-family:SOV_naga;font-size:400%;color:#c90
 }
+.menu header small{
+  position: relative;
+  top: -25px;
+  color: gray;
+}
 
 
 .menu-list{
@@ -27,6 +32,9 @@
 
 .menu-list h5{
   margin-bottom: 0;
+}
+.menu-list p{
+  font-size: 90%;
 }
 
 

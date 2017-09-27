@@ -1,6 +1,52 @@
 /* Impport  */
 @import url('https://fonts.googleapis.com/css?family=Khula:400,700,800');
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import '~@angular/material/theming';
+@include mat-core();
+$mat-my-gold:(
+  50: #c0901e,
+  100: #c0901e,
+  200: #c0901e,
+  300: #c0900a,
+  400: #d49000,
+  500: #C09000,
+  600: #c0900a,
+  700: #c09014,
+  800: #c0901e,
+  900: #c09028,
+  A100: #c0900a,
+  A200: #c09014,
+  A400: #c0901e,
+  A700: #c09028,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+$my-theme-primary: mat-palette($mat-my-gold);
+$my-theme-accent: mat-palette($mat-indigo,400);
+$my-theme-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme(
+  $my-theme-primary,
+  $my-theme-accent,
+  $my-theme-warn
+);
+
+@include angular-material-theme($my-theme);
 
 /* Fonts  */
 
